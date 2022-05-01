@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Permira Section Animation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: fs albert;
+      }
+
+      @font-face {
+        src: url(Fonts/FSAlbert\ Regular\ 2.otf);
+        font-family: fs albert;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        background-color: #13112b;
+        min-height: 100vh;
+      }
+
+      .animate {
+        clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+      }
+
+      .animate.clip-in {
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+
+      .animate-on-load {
+        opacity: 0;
+      }
+
+      .animate-on-load.clip-in {
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+        }
+
+        100% {
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        }
+      }
+
+      #top-box-1 {
+        animation-delay: 0.25s;
+      }
+
+      #top-box-2 {
+        animation-delay: 0.25s;
+      }
+
+      #percent66,
+      #percent85 {
+        animation-delay: 0.5s;
+      }
+
+      #bottom-box-1 {
+        animation-delay: 0.2s;
+      }
+      #bottom-box-2 {
+        animation-delay: 0.4s;
+      }
+      #bottom-box-3 {
+        animation-delay: 0.6s;
+      }
+      #bottom-box-4 {
+        animation-delay: 0.8s;
+      }
+      #bottom-box-5 {
+        animation-delay: 1s;
+      }
+      #bottom-box-6 {
+        animation-delay: 1.2s;
+      }
+
+      #percent29 {
+        animation-delay: 0.4s;
+      }
+      #percent26 {
+        animation-delay: 0.6s;
+      }
+      #percent26_2 {
+        animation-delay: 0.8s;
+      }
+      #percent13 {
+        animation-delay: 1s;
+      }
+      #percent3 {
+        animation-delay: 1.2s;
+      }
+      #percent2 {
+        animation-delay: 1.4s;
+      }
+
+      #boomer-stroke {
+        stroke-dasharray: 522.9818725585938px;
+        stroke-dashoffset: 522.9818725585938px;
+        animation-delay: 0.2s;
+      }
+
+      #gen-stroke {
+        stroke-dasharray: 805.8930053710938px;
+        stroke-dashoffset: 805.8930053710938px;
+        animation-delay: 0.4s;
+      }
+
+      #millennials-stroke {
+        stroke-dasharray: 979.2594604492188px;
+        stroke-dashoffset: 979.2594604492188px;
+        animation-delay: 0.6s;
+      }
+
+      #percentageMillennia,
+      #percentageGenX,
+      #percentageBoomer {
+        opacity: 0;
+        transition: 0.5s;
+        pointer-events: none;
+      }
+
+      #millennials:hover > #percentageMillennia {
+        opacity: 1;
+      }
+      #genX:hover > #percentageGenX {
+        opacity: 1;
+      }
+      #boomer:hover > #percentageBoomer {
+        opacity: 1;
+      }
+
+      .heartStroke {
+        animation: pieStroke 0.5s ease-in-out forwards;
+      }
+
+      @keyframes pieStroke {
+        100% {
+          stroke-dashoffset: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg
+        width="100%"
+        min-height="0"
+        viewBox="0 0 1095 2810"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="Primera Section Animation">
+          <g id="Group">
+            <path
+              id="Vector"
+              d="M1031.46 2768.72L1040.22 2755.34"
+              stroke="#F0944E"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              id="Vector_2"
+              d="M1044.08 2768.72L1058.75 2746.84"
+              stroke="#F0944E"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              id="Vector_3"
+              d="M1057.98 2768.72L1078.83 2737.32"
+              stroke="#F0944E"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+          </g>
+          <g id="bottom-content-box">
+            <g id="text">
+              <g
+                id="Channels in order of overall importance % of all respondants scoring 1 or 2"
+              >
+                <text
+                  transform="translate(-30 2166.32) rotate(0.01)"
+                  fill="#F0944E"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="FSAlbert"
+                  font-size="28.08"
+                  letter-spacing="0em"
+                >
+                  <tspan x="0" y="22.5816">
+                    Channels in order of overall importance&#10;
+                  </tspan>
+                </text>
+                <text
+                  transform="translate(-30 2166.32) rotate(0.01)"
+                  fill="white"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="FSAlbert"
+                  font-size="28.08"
+                  letter-spacing="0em"
+                >
+                  <tspan x="0" y="52.5816">
+                    % of all respondants scoring 1 or 2
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g id="text_2">
+              <text
+                id="SW review platforms"
+                transform="translate(107.247 2289.13) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0.742188" y="16">SW review platforms&#13;</tspan>
+              </text>
+            </g>
+            <g id="text_3">
+              <text
+                id="Expert content"
+                transform="translate(165.247 2354.36) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0.886719" y="16">Expert content</tspan>
+              </text>
+            </g>
+            <g id="text_4">
+              <text
+                id="Offline channels"
+                transform="translate(152.247 2419.59) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0.429688" y="16">Offline channels</tspan>
+              </text>
+            </g>
+            <g id="text_5">
+              <text
+                id="Search engines"
+                transform="translate(162.247 2484.81) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0.351562" y="16">Search engines</tspan>
+              </text>
+            </g>
+            <g id="text_6">
+              <text
+                id="Social Media"
+                transform="translate(186.247 2550.02) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0.492188" y="16">Social Media</tspan>
+              </text>
+            </g>
+            <g id="text_7">
+              <text
+                id="Other online"
+                transform="translate(186.247 2615.25) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0.765625" y="16">Other online</tspan>
+              </text>
+            </g>
+            <g class="animate" id="bottom-box-6">
+              <path
+                id="Vector_4"
+                d="M353.984 2604.8H312.284V2647.7H353.984V2604.8Z"
+                fill="white"
+              />
+            </g>
+            <g class="animate" id="bottom-box-5">
+              <path
+                id="Vector_5"
+                d="M374.854 2539.57H312.294V2582.47H374.854V2539.57Z"
+                fill="#A3A0AE"
+              />
+            </g>
+            <g class="animate" id="bottom-box-4">
+              <path
+                id="Vector_6"
+                d="M583.374 2474.36H312.294V2517.26H583.374V2474.36Z"
+                fill="#666278"
+              />
+            </g>
+            <g class="animate" id="bottom-box-3">
+              <path
+                id="Vector_7"
+                d="M854.454 2409.14H312.304V2452.04H854.454V2409.14Z"
+                fill="#F3A86E"
+              />
+            </g>
+            <g class="animate" id="bottom-box-2">
+              <path
+                id="Vector_8"
+                d="M854.464 2343.91H312.314V2386.81H854.464V2343.91Z"
+                fill="#F3A86E"
+              />
+            </g>
+            <g class="animate" id="bottom-box-1">
+              <path
+                id="Vector_9"
+                d="M917.034 2278.69H312.324V2321.59H917.034V2278.69Z"
+                fill="#F0944E"
+              />
+            </g>
+            <g id="text_8">
+              <text
+                class="animate"
+                id="percent29"
+                transform="translate(930.437 2287.29) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16">29%</tspan>
+              </text>
+            </g>
+            <g id="text_9">
+              <text
+                class="animate"
+                id="percent26"
+                transform="translate(866.527 2418.11) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16">26%</tspan>
+              </text>
+            </g>
+            <g id="text_10">
+              <text
+                class="animate"
+                id="percent26_2"
+                transform="translate(866.537 2352.7) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16">26%</tspan>
+              </text>
+            </g>
+            <g id="text_11">
+              <text
+                class="animate"
+                id="percent13"
+                transform="translate(591.727 2483.5) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16">13%</tspan>
+              </text>
+            </g>
+            <g id="text_12">
+              <text
+                class="animate"
+                id="percent3"
+                transform="translate(384.528 2548.89) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16">3%</tspan>
+              </text>
+            </g>
+            <g id="text_13">
+              <text
+                class="animate"
+                id="percent2"
+                transform="translate(364.128 2614.3) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16">2%</tspan>
+              </text>
+            </g>
+            <g class="animate" id="bottom-box-border">
+              <path
+                id="Vector_10"
+                d="M1017.13 2688.51L77.844 2688.4C74.1819 2688.39 70.6729 2686.93 68.0834 2684.35C65.494 2681.76 64.0345 2678.25 64.024 2674.58L64.084 2148.58C64.0972 2144.92 65.5588 2141.41 68.1499 2138.82C70.7409 2136.23 74.251 2134.78 77.914 2134.76L1017.19 2134.87C1020.86 2134.89 1024.37 2136.35 1026.96 2138.94C1029.55 2141.53 1031.01 2145.04 1031.01 2148.7L1030.95 2674.7C1030.94 2678.37 1029.48 2681.88 1026.89 2684.47C1024.31 2687.05 1020.8 2688.51 1017.13 2688.52V2688.51Z"
+                stroke="#787488"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-dasharray="3 3"
+              />
+            </g>
+          </g>
+          <g id="equal-box">
+            <g
+              id="Making reviews platforms the most important information channel for buyers"
+            >
+              <text
+                transform="translate(73.063 1998.87) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="28.08"
+                letter-spacing="0em"
+              >
+                <tspan x="11.6909" y="38.9816">
+                  Making reviews platforms the
+                </tspan>
+                <tspan x="678.538" y="38.9816"></tspan>
+                <tspan x="164.596" y="68.9816">
+                  information channel for buyers
+                </tspan>
+              </text>
+              <text
+                transform="translate(203.063 1998.87) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="48.08"
+                letter-spacing="0em"
+              >
+                <tspan x="363.952" y="38.9816">most important</tspan>
+              </text>
+            </g>
+            <text
+              id="="
+              transform="translate(494.191 1829.15) rotate(0.01)"
+              fill="white"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FSAlbert"
+              font-size="211.1"
+              letter-spacing="0em"
+            >
+              <tspan x="0" y="170.497">=</tspan>
+            </text>
+          </g>
+          <g id="plus-box">
+            <g
+              id="Millennial buyers seek real-time peer advice created on the spot vs. static analyst reports"
+            >
+              <text
+                transform="translate(188.705 1050.62) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="28"
+                letter-spacing="0em"
+              >
+                <tspan x="11.0422" y="38.96">Millennial buyers seek</tspan>
+                <tspan x="412.991" y="90.96">vs. static analyst reports</tspan>
+              </text>
+              <text
+                transform="translate(188.705 1050.62) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="48"
+                letter-spacing="0em"
+              >
+                <tspan x="272.995" y="38.96">real-time peer advice</tspan>
+                <tspan x="11.7414" y="90.96">created on the spot</tspan>
+              </text>
+            </g>
+            <text
+              id="+"
+              transform="translate(493.331 870.005) rotate(0.01)"
+              fill="white"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FSAlbert"
+              font-size="211.1"
+              letter-spacing="0em"
+            >
+              <tspan x="0" y="170.497">+</tspan>
+            </text>
+          </g>
+          <g id="mid-content-box">
+            <g id="millennials">
+              <text
+                id="percentageMillennia"
+                transform="translate(469.508 1518) rotate(0.01)"
+                fill="#F0944E"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="68.41"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="54.6025">63%</tspan>
+              </text>
+              <g class="animateStroke" id="millennials-stroke">
+                <path
+                  id="Vector_11"
+                  d="M540.986 1313.19C677.986 1313.19 789.116 1424.31 789.096 1561.36C789.076 1698.41 677.966 1809.49 540.926 1809.47C507.547 1809.52 474.505 1802.81 443.787 1789.74C413.07 1776.68 385.313 1757.54 362.186 1733.47"
+                  stroke="#F0944E"
+                  stroke-width="30"
+                  stroke-miterlimit="10"
+                />
+              </g>
+            </g>
+            <g id="genX">
+              <text
+                id="percentageGenX"
+                transform="translate(469.508 1518) rotate(0.01)"
+                fill="#A3A0AE"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="68.41"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="54.6025">62%</tspan>
+              </text>
+              <g class="animateStroke" id="gen-stroke">
+                <path
+                  id="Vector_12"
+                  d="M540.976 1354.3C655.316 1354.3 747.976 1447.02 747.976 1561.35C747.976 1675.68 655.256 1768.35 540.916 1768.35C488.493 1768.42 438.012 1748.52 399.726 1712.71"
+                  stroke="#A3A0AE"
+                  stroke-width="30"
+                  stroke-miterlimit="10"
+                />
+              </g>
+            </g>
+            <g id="boomer">
+              <text
+                id="percentageBoomer"
+                transform="translate(469.508 1518) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="68.41"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="54.6025">50%</tspan>
+              </text>
+              <g class="animateStroke" id="boomer-stroke">
+                <path
+                  id="Vector_13"
+                  d="M541.596 1394.79C563.457 1394.79 585.104 1399.1 605.301 1407.47C625.498 1415.83 643.85 1428.09 659.308 1443.55C674.766 1459.01 687.028 1477.36 695.394 1497.56C703.76 1517.76 708.066 1539.4 708.066 1561.26C708.066 1583.12 703.76 1604.77 695.394 1624.97C687.028 1645.17 674.766 1663.52 659.308 1678.98C643.85 1694.43 625.498 1706.7 605.301 1715.06C585.104 1723.43 563.457 1727.73 541.596 1727.73"
+                  stroke="white"
+                  stroke-width="30"
+                  stroke-miterlimit="10"
+                />
+              </g>
+            </g>
+            <text
+              id="Millennials"
+              transform="translate(399.171 1293.42) rotate(0.01)"
+              fill="#F0944E"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FS Me"
+              font-size="28.03"
+              font-weight="300"
+              letter-spacing="0em"
+            >
+              <tspan x="0" y="22.5075">Millennials</tspan>
+            </text>
+            <text
+              id="GenX"
+              transform="translate(465.361 1335.93) rotate(0.01)"
+              fill="#A3A0AE"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FS Me"
+              font-size="28.03"
+              font-weight="300"
+              letter-spacing="0em"
+            >
+              <tspan x="0" y="22.5075">GenX</tspan>
+            </text>
+            <text
+              id="by Boomers"
+              transform="translate(382.511 1375.64) rotate(0.01)"
+              fill="white"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FS Me"
+              font-size="28.03"
+              font-weight="300"
+              letter-spacing="0em"
+            >
+              <tspan x="0" y="22.5075">by Boomers</tspan>
+            </text>
+            <g id="border">
+              <path
+                id="Vector_14"
+                d="M1015.33 1871.4L79.206 1871.29C75.1343 1871.28 71.2335 1869.66 68.3516 1866.78C65.4697 1863.9 63.8397 1860.01 63.816 1855.93L63.886 1199.32C63.9018 1195.25 65.5297 1191.34 68.4146 1188.46C71.2995 1185.57 75.2074 1183.95 79.286 1183.93L1015.42 1184.03C1019.5 1184.05 1023.41 1185.67 1026.29 1188.56C1029.18 1191.44 1030.8 1195.35 1030.82 1199.43L1030.74 1856C1030.72 1860.09 1029.09 1864 1026.21 1866.88C1023.32 1869.77 1019.41 1871.39 1015.33 1871.4V1871.4Z"
+                stroke="#787488"
+                stroke-width="1.98"
+                stroke-miterlimit="10"
+                stroke-dasharray="2.96 2.96"
+              />
+            </g>
+            <text
+              id="% of buyers preferring non-analyst generated content"
+              transform="translate(-10 1212.12) rotate(0.01)"
+              fill="#F0944E"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FSAlbert"
+              font-size="28.08"
+              letter-spacing="0em"
+            >
+              <tspan x="0" y="22.5816">
+                % of buyers preferring non-analyst generated content
+              </tspan>
+            </text>
+          </g>
+          <g id="top-content-box">
+            <path
+              id="Vector_15"
+              d="M1019.33 906.355L76.134 906.245C72.9856 906.237 69.9685 904.983 67.7423 902.757C65.5161 900.53 64.2619 897.513 64.254 894.365V509.495C64.2619 506.348 65.5147 503.333 67.7388 501.107C69.9628 498.881 72.9774 497.625 76.124 497.615L1019.3 497.725C1022.45 497.735 1025.47 498.99 1027.69 501.216C1029.92 503.442 1031.17 506.457 1031.18 509.605L1031.13 894.485C1031.12 897.631 1029.87 900.646 1027.64 902.87C1025.42 905.094 1022.4 906.347 1019.25 906.355H1019.33Z"
+              stroke="#787488"
+              stroke-width="1.87"
+              stroke-miterlimit="10"
+              stroke-dasharray="2.81 2.81"
+            />
+            <text
+              id="Software buyer perspectives on review value"
+              transform="translate(0 530.433) rotate(0.01)"
+              fill="#F0944E"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FSAlbert"
+              font-size="28.08"
+              letter-spacing="0em"
+            >
+              <tspan x="0" y="22.5816">
+                Software buyer perspectives on review value
+              </tspan>
+            </text>
+            <g id="Group_2">
+              <path
+                id="Vector_16"
+                d="M395.484 632.525C402.2 632.525 407.644 627.081 407.644 620.365C407.644 613.649 402.2 608.205 395.484 608.205C388.768 608.205 383.324 613.649 383.324 620.365C383.324 627.081 388.768 632.525 395.484 632.525Z"
+                fill="#F0944E"
+              />
+              <path
+                id="Vector_17"
+                d="M488.514 632.545C495.23 632.545 500.674 627.101 500.674 620.385C500.674 613.669 495.23 608.225 488.514 608.225C481.798 608.225 476.354 613.669 476.354 620.385C476.354 627.101 481.798 632.545 488.514 632.545Z"
+                fill="#DFDFDF"
+              />
+              <text
+                id="Yes"
+                transform="translate(419.498 607.965) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="20.6"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16.562">Yes</tspan>
+              </text>
+              <text
+                id="No"
+                transform="translate(512.008 607.005) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="20.6"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16.562">No</tspan>
+              </text>
+            </g>
+            <g id="first-box">
+              <path
+                id="Vector_18"
+                d="M974.714 673.205H383.324V749.795H974.714V673.205Z"
+                fill="#DFDFDF"
+                stroke="black"
+                stroke-width="0.13"
+                stroke-miterlimit="10"
+              />
+              <g class="animate" id="top-box-1">
+                <path
+                  id="Vector_19"
+                  d="M773.114 673.165H381.774V749.755H773.114V673.165Z"
+                  fill="#F0944E"
+                />
+              </g>
+              <text
+                id="Do reviews significantly impact your purchase decision?"
+                transform="translate(150.857 676.84) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="1.00247" y="16">Do reviews significantly</tspan>
+                <tspan x="96.2954" y="38">impact your &#10;</tspan>
+                <tspan x="40.7486" y="60">purchase decision?</tspan>
+              </text>
+              <text
+                id="Do you trust peer reviews as much as a personal recommendation?"
+                transform="translate(132.677 772.66) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FS Me"
+                font-size="20"
+                font-weight="300"
+                letter-spacing="0em"
+              >
+                <tspan x="0.962616" y="16">Do you trust peer reviews</tspan>
+                <tspan x="26.6657" y="38">as much as a personal</tspan>
+                <tspan x="63.1111" y="60">recommendation?</tspan>
+              </text>
+              <path
+                id="Vector_20"
+                d="M974.694 773.515H381.754V850.105H974.694V773.515Z"
+                fill="#DFDFDF"
+                stroke="black"
+                stroke-width="0.13"
+                stroke-miterlimit="10"
+              />
+              <g class="animate" id="top-box-2">
+                <path
+                  id="Vector_21"
+                  d="M885.754 773.475H381.754V850.065H885.754V773.475Z"
+                  fill="#F0944E"
+                />
+              </g>
+              <text
+                class="animate"
+                id="percent85"
+                transform="translate(805.294 796.805) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="28.08"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="22.5816">85%</tspan>
+              </text>
+              <text
+                id="15%"
+                transform="translate(900.727 796.765) rotate(0.01)"
+                fill="#242744"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="28.08"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="22.5816">15%</tspan>
+              </text>
+              <text
+                class="animate"
+                id="percent66"
+                transform="translate(695.641 696.495) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="28.08"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="22.5816">66%</tspan>
+              </text>
+              <text
+                id="34%"
+                transform="translate(900.721 696.505) rotate(0.01)"
+                fill="#242744"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="28.08"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="22.5816">34%</tspan>
+              </text>
+            </g>
+          </g>
+          <g id="sub-header">
+            <g
+              id="For 85% of buyers peer reviews are as trustworthy as a personal recommendation"
+            >
+              <text
+                transform="translate(60 380.121) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="28.08"
+                letter-spacing="0em"
+              >
+                <tspan x="8.44598" y="38.9816">
+                  For 85% of buyers peer reviews are
+                </tspan>
+                <tspan x="714.703" y="38.9816"></tspan>
+                <tspan x="179.85" y="68.9816">
+                  as a personal recommendation
+                </tspan>
+              </text>
+              <text
+                transform="translate(188.951 380.121) rotate(0.01)"
+                fill="white"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="FSAlbert"
+                font-size="48.08"
+                letter-spacing="0em"
+              >
+                <tspan x="427.068" y="38.9816">as trustworthy</tspan>
+              </text>
+            </g>
+          </g>
+          <g id="header">
+            <text
+              id="Highly trustworthy and real-time peer-generated content attracts the new millennial B2B SW buyer"
+              transform="translate(-30 97.2549) rotate(0.01)"
+              fill="#F0944E"
+              xml:space="preserve"
+              style="white-space: pre"
+              font-family="FSAlbert"
+              font-size="50"
+              letter-spacing="0em"
+            >
+              <tspan x="42.1039" y="40.5">
+                Highly trustworthy and real-time
+              </tspan>
+              <tspan x="7.53357" y="94.5">
+                peer-generated content attracts the
+              </tspan>
+              <tspan x="51.9916" y="148.5">
+                new millennial B2B SW buyer&#13;
+              </tspan>
+            </text>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <script>
+      window.onload = function () {
+        var reveals = document.querySelectorAll(".animate-on-load");
+        for (var i = 0; i < reveals.length; i++) {
+          reveals[i].classList.add("clip-in");
+        }
+      };
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".animate");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 75;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("clip-in");
+          } else {
+            reveals[i].classList.remove("clip-in");
+          }
+        }
+      }
+
+      function reveal2() {
+        var reveals = document.querySelectorAll(".animateStroke");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 100;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("heartStroke");
+          } else {
+            reveals[i].classList.remove("heartStroke");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+      window.addEventListener("scroll", reveal2);
+    </script>
+  </body>
+</html>
